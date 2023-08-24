@@ -1,3 +1,8 @@
+# About
+
+This is a simple Web Browser (only HTML supported) that I was
+developed as my first year programming project in Charles University
+
 # User documentation - Web Browser
 
 Web Browser is an app for accessing websites and showing their content using HTML.
