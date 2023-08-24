@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:student_buchkod.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:student_buchkod"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="725"
+        x:Class="student_buchkod.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/logo.png"
+        Title="Web Browser">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+
+    <StackPanel>
+        <Grid VerticalAlignment="Top" Height="70">
+            <Border BoxShadow="0 0 0 2 Black">
+                <StackPanel Background="#cccccc" Orientation="Horizontal" VerticalAlignment="Top">
+                    <!-- Buttons and Input Text Box -->
+                    <Button Click="Back" Margin="10" Background="Transparent" Width="50" Height="50">
+                        <Image Source="/Assets/back.png"/>
+                    </Button>
+                    <Button Margin="10" Click="Update" Background="Transparent" Width="50" Height="50">
+                        <Image Source="/Assets/refresh.png"/>
+                    </Button>
+                    <Button Margin="10" Click="Home" Background="Transparent" Width="50" Height="50">
+                        <Image Source="/Assets/home.png"/>
+                    </Button>
+                    <TextBox x:Name="inputURL" Watermark="Write your url address here" Background="white" Width="900" Height="40" Margin="30,0,0,0" FontSize="20"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+        <ScrollViewer Margin="0,5,0,0" Width="1200" Height="725" Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <local:InlinePanel x:Name="siteContent" VerticalAlignment="Top" Orientation="Horizontal">
+                <!-- Site content here -->
+            </local:InlinePanel>
+        </ScrollViewer>
+    </StackPanel>
+</Window>

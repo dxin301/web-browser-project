@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>title</title>
+  </head>
+  <body>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <p>This is a paragraph</p>
+    <p>This is a second paragraph which is a bit longer then the
+    paragraph before. paragraph paragraph paragraph paragraph paragraph
+  paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
+    <p>This is still paragraph. And here go &lt;ul&gt; and &lt;ol&gt;</p>
+    <ol>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+    <ul>
+      <li>1st</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+    <h1>Here is image:</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="Alt before image loads">
+    <h1>Let's test pre tag</h1>
+    <pre role="img" aria-label="ASCII COW">
+          ___________________________
+      &lt; Pre tags allows to display content
+                as it is in html file &gt;
+          ---------------------------
+              \   ^__^
+               \  (oo)\_______
+                  (__)\       )\/\
+                      ||----w |
+                      ||     ||
+      </pre>
+      <pre>
+      L          TE
+        A       A
+          C    V
+           R A
+           DOU
+           LOU
+          REUSE
+          QUE TU
+          PORTES
+        ET QUI T'
+        ORNE O CI
+         VILISÉ
+        OTE-  TU VEUX
+         LA    BIEN
+        SI      RESPI
+                RER       - Apollinaire
+    </pre>
+
+    <details>
+      <summary>Hidden content</summary>
+      <p>Not hidden anymore</p>
+    </details>
+    <p title="and this is title">This paragraph has title</p>
+    <p>This is a <b>bold word</b>, this is <i>cursive</i>, and this is <b><i>both</i></b></p>
+    <h1>This is table</h1>
+    <table>
+      <tr>
+        <td>a</td>
+        <td>b</td>
+        <td>c</td>
+        <td rowspan=3><h1>Header 1</h1><p>paragraph (rowspan 2 in this field)</p></td>
+        <td>e</td>
+        <td colspan=2>f with colspan 2</td>
+      </tr>
+      <tr>
+        <td>a2</td>
+        <td>b2</td>
+        <td>c2</td>
+        <td>d2</td>
+        <td>e2</td>
+        <td>f2</td>
+      </tr>
+      <tr>
+        <td>a3</td>
+        <td>b3</td>
+        <td>c3</td>
+        <td>d3</td>
+        <td>e3</td>
+        <td>f3</td>
+      </tr>
+    </table>
+    <h1>Form sends POST request to dump_request.php</h1>
+      <form action="dump_request.php" method="post">
+      	<h1>Login:</h1>
+      	<label for="email">Email:</label>
+      	<input id="email" type="email" name="email" placeholder="example@mail.com" required>
+      	<br>
+      	<label for="password">Password:</label>
+      	<input type="password" name="password" placeholder="Your password here" required>
+      	<br>
+      	<input type="submit" value="Login">
+      </form>
+      <hr>
+      This is just words that are not in any tag. There is &lt;hr&gt; above
+      <h1>And here is iframe of dump_request.php</h1>
+      <iframe src="dump_request.php" width="500" height="500"></iframe>
+  </body></html>
